@@ -23,20 +23,12 @@ namespace HomeTask4.WorkWithList
         public List<int> Reverse(List<int> list)
         {
             var _listReverse = list.OrderByDescending(x => x).ToList();
-            foreach (var item in _listReverse)
-            {
-                Console.WriteLine(item);
-            }
             return _listReverse;
         }
 
         public List<int> CustomSort(List<int> list)
         {
             var _sortedList = list.OrderBy(x => x).ToList();
-            foreach (var item in _sortedList)
-            {
-                Console.WriteLine(item);
-            }
             return _sortedList;
         }
     }

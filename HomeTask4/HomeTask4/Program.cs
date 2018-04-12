@@ -27,9 +27,17 @@ namespace HomeTask4
             Console.WriteLine("==========lastItem============");
             Console.WriteLine(ls.GetLastItem(_list));
             Console.WriteLine("==========sort============");
-            ls.CustomSort(_list);
+            var listSort = ls.CustomSort(_list);
+            foreach (var item in listSort)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine("===========reverse============");
-            ls.Reverse(_list);
+            var listReverse = ls.Reverse(_list);
+            foreach (var item in listReverse)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.WriteLine("\n******************Work with dictionary*******************\n");
 
@@ -46,15 +54,29 @@ namespace HomeTask4
             DictionaryService ds = new DictionaryService();
             //
             Console.WriteLine("===========sort by key============");
-            ds.CustomSortByKey(_dictionary);
+            var dictKey = ds.CustomSortByKey(_dictionary);
+            foreach (var item in dictKey)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine("============sort by value===========");
-            ds.CustomSortByValue(_dictionary);
+            var dictValue = ds.CustomSortByValue(_dictionary);
+            foreach (var item in dictValue)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine("============GetFirstItem===========");
-            ds.GetFirstItem(_dictionary);
+            var firstItem = ds.GetFirstItem(_dictionary);
+            Console.WriteLine(firstItem);
             Console.WriteLine("============GetLastItem===========");
-            ds.GetLastItem(_dictionary);
+            var lastItem = ds.GetLastItem(_dictionary);
+            Console.WriteLine(lastItem);
             Console.WriteLine("============Reverse dictionary===========");
-            ds.Reverse(_dictionary);
+            var revDict = ds.Reverse(_dictionary);
+            foreach (var item in revDict)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.WriteLine("=============Work with number======================\n");
             Console.Write("Enter the number :");
@@ -63,7 +85,7 @@ namespace HomeTask4
             Count _count = new Count();
             int rezult = _count.CountOperations(number);
 
-            Console.WriteLine("this number has {0} operations with *2 and +1",rezult);
+            Console.WriteLine("This number has {0} operations with *2 and +1",rezult);
             Console.ReadLine();
         }
     }

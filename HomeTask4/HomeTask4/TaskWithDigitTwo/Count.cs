@@ -21,22 +21,7 @@ namespace HomeTask4.TaskWithDigitTwo
                       _counter++;
                   }
 
-              } while (number/2!=1);
-
-           /* for (; number==2 ;_counter++)
-            {
-                if (number % 2 == 0)
-                {
-                    number = number / 2;
-                    //_counter++;
-                }
-                else
-                {
-
-                    number = --number;
-                    //_counter++;
-                }
-            }*/
+              } while (number!=2);
             return _counter;
         }
     }
