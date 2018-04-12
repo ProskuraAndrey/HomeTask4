@@ -1,4 +1,5 @@
-﻿using HomeTask4.WorkWithDictionary;
+﻿using HomeTask4.TaskWithDigitTwo;
+using HomeTask4.WorkWithDictionary;
 using HomeTask4.WorkWithList;
 using System;
 using System.Collections.Generic;
@@ -39,7 +40,7 @@ namespace HomeTask4
                 {1, "Ternopil" },
                 {9, "Kyiv" },
                 {35, "Lviv" }
-                
+
             };
 
             DictionaryService ds = new DictionaryService();
@@ -55,6 +56,14 @@ namespace HomeTask4
             Console.WriteLine("============Reverse dictionary===========");
             ds.Reverse(_dictionary);
 
+            Console.WriteLine("=============Work with number======================\n");
+            Console.Write("Enter the number :");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            Count _count = new Count();
+            int rezult = _count.CountOperations(number);
+
+            Console.WriteLine("this number has {0} operations with *2 and +1",rezult);
             Console.ReadLine();
         }
     }

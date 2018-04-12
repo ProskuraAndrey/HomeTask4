@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TaskWithDigitTwo\Count.cs" />
     <Compile Include="WorkWithDictionary\DictionaryService.cs" />
     <Compile Include="WorkWithDictionary\IInterfaceForDictionary.cs" />
     <Compile Include="WorkWithList\IInterfaceForList.cs" />
